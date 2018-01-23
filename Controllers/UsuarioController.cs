@@ -28,7 +28,7 @@ namespace ForumApi.Controllers
             rs.ContentType ="application/json";
             if(rs.Value==null){
             rs.StatusCode = 204;
-            rs.Value = "Não há resulatado para essa pesquisa";
+            rs.Value = $"Resultado para id: {id} não retornou dados";
             }
             else{
                 rs.StatusCode = 200;
