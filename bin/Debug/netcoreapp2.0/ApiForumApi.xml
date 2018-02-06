@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ForumApi</name>
+    </assembly>
+    <members>
+        <member name="M:ForumApi.Controllers.UsuarioController.Listar">
+            <summary>
+            
+            Retorna lista de usuários
+            </summary>
+            <returns>Lista de usuários</returns>
+            <response code="200">Retorna o tipo do campo da tabela usuário.</response>
+            <response code="400">Ocorreu um erro</response>
+        </member>
+        <member name="M:ForumApi.Controllers.UsuarioController.Listar(System.Int32)">
+            <summary>
+            Busca um usuário pelo seu Id
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna um usuário</returns>
+            <response code="200">Retorna um usuário</response>
+            <response code="400">Ocorreu um erro</response>
+            <response code="404">Usuário não encontrado</response>
+        </member>
+        <member name="M:ForumApi.Controllers.UsuarioController.Adicionar(ForumApi.Models.Usuario)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="usuario">Novo usuário para registro</param>
+            <remarks>
+            Modelo de dados que deve ser enviado para cadastrar o usuário request:
+            
+                POST /Usuario
+                {
+                    "nome" : "nome do usuario"
+                }    
+            </remarks>
+            <response code="200">Retorna o usuario cadastrado</response>
+            <response code="400">Ocorreu um erro</response>
+        </member>
+        <member name="F:ForumApi.Models.Conexao.con">
+            <summary>
+            Objeto utilizado para estabelecer a conexão com o servidor
+            de banco de dados SQLExpress
+            </summary>
+        </member>
+        <member name="F:ForumApi.Models.Conexao.cmd">
+            <summary>
+            Objeto utilizado para executar comandos de SQL, tais como:
+            select, Udate, Delete,Insert e outros...
+            </summary>
+        </member>
+        <member name="F:ForumApi.Models.Conexao.sdr">
+            <summary>
+            Objeto utilizado para guardar os retornos do select realizados 
+            nas tabelas do banco de dados
+            </summary>
+        </member>
+        <member name="M:ForumApi.Models.Conexao.Caminho">
+            <summary>
+            o método caminho retorna o local do banco de dados.
+            </summary>
+            <returns>Retorna uma string de conexão com o banco</returns>
+        </member>
+    </members>
+</doc>

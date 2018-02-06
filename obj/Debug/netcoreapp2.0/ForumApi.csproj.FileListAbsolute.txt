@@ -8,3 +8,4 @@ C:\Users\08929532845\Desktop\backend\ForumApi\obj\Debug\netcoreapp2.0\ForumApi.A
 C:\Users\08929532845\Desktop\backend\ForumApi\obj\Debug\netcoreapp2.0\ForumApi.AssemblyInfo.cs
 C:\Users\08929532845\Desktop\backend\ForumApi\obj\Debug\netcoreapp2.0\ForumApi.dll
 C:\Users\08929532845\Desktop\backend\ForumApi\obj\Debug\netcoreapp2.0\ForumApi.pdb
+C:\Users\08929532845\Desktop\backend\ForumApi\bin\debug\netcoreapp2.0\ApiForumApi.xml
